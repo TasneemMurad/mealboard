@@ -119,4 +119,64 @@ export const mockData = [
         ingredients: ["Chicken", "Rice", "Onions", "Garlic", "Saffron", "Spices"],
         authorName: "Noora"
     },
+    {
+        imageUrl: "/images/Margherita.jpg",
+        id: 11,
+        cuisine: "Italian",
+        title: "Margherita Pizza",
+        description: "Margherita pizza is a traditional Neapolitan pizza made with a simple, high-impact combination of ingredients that mirror the colors of the Italian flag: red tomatoes, white mozzarella, and green basil.",
+        difficulty: "Easy",
+        prepTime: 45,
+        rating: 5,
+        ingredients: ["Pizza Dough", "Tomato Sauce", "Fresh Mozzarella", "Fresh Basil", "Olive Oil"],
+        authorName: "Marco"
+    },
+    {
+        imageUrl: "/images/Tacos.jpg",
+        id: 12,
+        cuisine: "Mexican",
+        title: "Chicken Tacos",
+        description: "",
+        difficulty: "Medium",
+        prepTime: 50,
+        rating: 4,
+        ingredients: ["Chicken", "Taco Shells", "Lettuce", "Cheese", "Salsa"],
+        authorName: ""
+    },
+    {
+        imageUrl: "/images/.jpg",
+        id: 13,
+        cuisine: "",
+        title: "",
+        description: "",
+        difficulty: "",
+        prepTime: ,
+        rating: ,
+        ingredients: [],
+        authorName: ""
+    },
+    {
+        imageUrl: "/images/.jpg",
+        id: 14,
+        cuisine: "",
+        title: "",
+        description: "",
+        difficulty: "",
+        prepTime: ,
+        rating: ,
+        ingredients: [],
+        authorName: ""
+    },
+    {
+        imageUrl: "/images/.jpg",
+        id: 15,
+        cuisine: "",
+        title: "",
+        description: "",
+        difficulty: "",
+        prepTime: ,
+        rating: ,
+        ingredients: [],
+        authorName: ""
+    },
 ];
