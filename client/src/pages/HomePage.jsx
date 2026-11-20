@@ -3,6 +3,7 @@ import { mockData } from '../mockData'
 import FilterControls from '../components/FilterControls'
 import RecipeCard from '../components/RecipeCard'
 import '../App.css'
+import RecipeList from '../components/RecipeList'
 
 function HomePage() {
     const [recipes, setRecipes] = useState(mockData);
