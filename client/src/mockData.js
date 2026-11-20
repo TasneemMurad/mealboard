@@ -74,7 +74,7 @@ export const mockData = [
     {
         imageUrl: "/images/Mansaf.jpg",
         id: 7,
-        cuisine: "Middle Eastern",
+        cuisine: "Jordanian",
         title: "Mansaf",
         description: "A traditional Jordanian dish consisting of lamb cooked in a yogurt-based sauce, served over rice.",
         difficulty: "Hard",
