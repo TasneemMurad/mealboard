@@ -24,6 +24,7 @@ function FilterControls({
     <option value="Mexican">Mexican</option>
     <option value="French">French</option>
     <option value="Middle Eastern">Middle Eastern</option>
+    <option value="Jordanian">Jordanian</option>
     <option value="Palestinian">Palestinian</option>
     </select>
     <select
