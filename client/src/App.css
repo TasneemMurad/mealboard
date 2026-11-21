@@ -9,7 +9,7 @@
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   padding-bottom: 16px;
   transition: transform 0.2s ease;
 }
@@ -45,7 +45,7 @@
 .recipe-card span {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #d97706;
+  color: #b45309;
 }
 
 .recipe-meta {
@@ -168,4 +168,101 @@ overflow-x: hidden;
 .about-card p {
   margin-bottom: 0;
   color: #4b5563;
+}
+
+.page-style {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.page-style h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  color: #1f2937;
+}
+
+.page-style p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.page-style a {
+  color: #d97706;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-style a:hover {
+  text-decoration: underline;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.row-style {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row-style label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.row-style input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.row-style input:focus {
+  outline: none;
+  border-color: #d97706;
+  box-shadow: 0 0 0 3px #fef3c7;
+}
+
+.button-style {
+  margin-top: 8px;
+  padding: 11px;
+  background-color: #d97706;
+  color: #ffffff;
+  border:  1px solid #d97706;;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+  
+.button-style:hover {
+  background-color: #b45309;
+}
+
+.success-view {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.page-style .success-view .button-style {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 11px 24px;
+  color: #ffffff;
+  text-decoration: none;
 }
