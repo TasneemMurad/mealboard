@@ -22,7 +22,6 @@ function HomePage() {
         sortedRecipes.sort((a, b) => b.prepTime - a.prepTime)
     }
     return (<div>
-        <h1>Home</h1>
         <p>{filteredRecipes.length} recipes</p>
         <FilterControls
             searchText={searchText}
