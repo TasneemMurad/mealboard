@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import FilterControls from './FilterControls';
 
-function Header() {
+function Header({
+  searchText,
+  onSearchChange,
+  selectedCuisine,
+  onCuisineChange,
+  sortOrder,
+  onSortChange }
+) {
   const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +25,10 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   const isScrolled = !isHomePage || scrollY > 60;
 
   const textOpacity = Math.max(0, 1 - scrollY / 220);
@@ -25,7 +38,28 @@ function Header() {
     <>
       <header className={isScrolled ? 'scrolled' : ''}>
         <h2>CookShelf</h2>
-        <nav>
+
+        {isHomePage && (
+          <FilterControls
+            searchText={searchText}
+            onSearchChange={onSearchChange}
+            selectedCuisine={selectedCuisine}
+            onCuisineChange={onCuisineChange}
+            sortOrder={sortOrder}
+            onSortChange={onSortChange}
+          />
+        )}
+
+        <button
+          type="button"
+          className="mobile-menu-btn"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? '✕' : '☰'}
+        </button>
+
+        <nav className={menuOpen ? 'open' : ''}>
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/login">Login</NavLink>
           <NavLink to="/register">Register</NavLink>
@@ -50,7 +84,7 @@ function Header() {
             }}
           >
             <h1>Every Great Meal<br />Starts Here</h1>
-            <p>Discover curated recipes, filter by cuisine, and find your next favorite dish.</p>
+            <p>Discover curated recipes and find your next favorite dish.</p>
           </div>
         </div>
       )}
