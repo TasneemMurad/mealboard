@@ -15,9 +15,12 @@ main {
   position: relative;
   z-index: 10;
   background-color: #ffffff;
-  max-width: 1200px;
+  padding: 20px 40px;
   margin: 0 auto;
-  padding: 20px;
+}
+
+body:has(.login-page) main {
+  padding: 0;
 }
 
 main::before {
